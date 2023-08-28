@@ -7,8 +7,6 @@ const Movies = () => {
   const { movies, API_IMG, search } = useContext(DataContext);
   const [category, setCategory] = useState("popular");
 
-  console.log(movies);
-
   return (
     <div className="movies-container">
       <ul className="movies">
