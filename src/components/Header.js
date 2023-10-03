@@ -1,9 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import DataContext from "../context/DataContext";
 import "../styles/Header.css";
 import React, { useContext } from "react";
 
 const Header = () => {
   const { search, setSearch } = useContext(DataContext);
+  const navigate = useNavigate("");
 
   return (
     <div className="header-container">
@@ -12,7 +14,7 @@ const Header = () => {
 
         <nav>
           <ul className="nav-bar">
-            <li>Home</li>
+            <li onClick={() => navigate("/")}>Home</li>
             <li>Trending</li>
             <li>Browse Movies</li>
           </ul>
