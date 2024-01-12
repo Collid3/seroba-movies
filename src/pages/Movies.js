@@ -8,11 +8,11 @@ const Movies = () => {
 
   return (
     <div className="movies-container">
-      <ul className="movies">
-        {movies.filter((movie) =>
-          movie.title.toLowerCase().includes(search.toLowerCase())
-        ).length > 0 ? (
-          movies
+      {movies.filter((movie) =>
+        movie.title.toLowerCase().includes(search.toLowerCase())
+      ).length > 0 ? (
+        <ul className="movies">
+          {movies
             .filter((movie) =>
               movie.title.toLowerCase().includes(search.toLowerCase())
             )
@@ -25,11 +25,11 @@ const Movies = () => {
                   search={search}
                 />
               );
-            })
-        ) : (
-          <p>Search for "{search}" not found</p>
-        )}
-      </ul>
+            })}
+        </ul>
+      ) : (
+        <p>Search for "{search}" not found</p>
+      )}
     </div>
   );
 };

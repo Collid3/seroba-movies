@@ -2,6 +2,11 @@
   min-height: calc(100vh - 108px);
 }
 
+.movies-container > p {
+  padding: 0 1.5rem;
+  text-align: start;
+}
+
 .movies {
   display: grid;
   grid-template-columns: repeat(auto-fill, 26.5rem);

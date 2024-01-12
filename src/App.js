@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Movies from "./pages/Movies";
 import MoviePage from "./pages/MoviePage";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
         <Route path="/*" element={<Movies />} />
         <Route path="/movie/:id" element={<MoviePage />} />
       </Routes>
+
+      <Footer />
     </div>
   );
 }

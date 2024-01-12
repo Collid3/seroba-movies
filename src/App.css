@@ -21,6 +21,10 @@ ul {
   list-style: none;
 }
 
+input {
+  font-size: inherit;
+}
+
 .App {
   color: white;
   font-family: "Arimo", sans-serif;
@@ -28,4 +32,5 @@ ul {
   text-align: center;
   /* padding: 1rem; */
   background-color: #121212;
+  min-height: 100vh;
 }
